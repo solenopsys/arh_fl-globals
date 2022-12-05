@@ -2,7 +2,7 @@
   "name": "globals",
   "projectType": "library",
   "sourceRoot": "libs/utils/globals/src",
-  "prefix": "hyperconverged",
+  "prefix": "sc",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
