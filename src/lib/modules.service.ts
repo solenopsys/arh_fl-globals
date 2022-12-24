@@ -34,7 +34,7 @@ export class ModulesService {
             .pipe(map((data: any[]) => injectPrefix(data, "/fm/modules/" + name))))
     }
 
-    loadModuleMenuDevelop(modulePrefix: boolean): Promise<any> {
+    loadModuleMenuDevelop(modulePrefix: boolean): Promise<any> { //todo remove this
         return firstValueFrom(this.http.get<any[]>(`/assets/menu.json`)
             .pipe(map((data: any[]) => modulePrefix ? injectPrefix(data, "/fm/modules/" + name) : data)))
     }
