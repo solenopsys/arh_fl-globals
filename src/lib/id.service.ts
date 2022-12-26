@@ -1,20 +1,20 @@
 import {Injectable} from "@angular/core";
 
 @Injectable(
-  {providedIn: 'root'}
+    {providedIn: 'root'}
 )
 export class IdService {
-  i=0;
+    i = 0;
 
-  constructor( ) {
-  }
+    constructor() {
+    }
 
-  getNextId(): string {
-    this.i++;
-    return this.i+"";
-  }
+    getNextId(): string {
+        this.i++;
+        return this.i + "";
+    }
 
-  getRandId(): string {
-    return crypto.randomUUID();
-  }
+    getRandId(): string {
+        return crypto.randomUUID();
+    }
 }

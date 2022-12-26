@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {map} from "rxjs/operators";
-import {firstValueFrom, pipe} from 'rxjs';
+import {firstValueFrom} from 'rxjs';
 
 const injectPrefix = (items: any[], prefix: string): any[] => {
     items.forEach((val: any) => {
