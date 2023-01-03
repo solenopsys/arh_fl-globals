@@ -1,5 +1,5 @@
 {
-  "name": "@solenopsys/sc-fl-globals",
+  "name": "@solenopsys/hc-fl-globals",
   "version": "0.9.1",
   "scripts": {
     "test": "node index.js",
