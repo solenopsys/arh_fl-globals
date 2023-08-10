@@ -30,6 +30,9 @@ export class XsModuleLayout<T extends LayoutEntry> implements XsModuleLayoutInte
     readonly type = XsModuleType.LAYOUT;
     readonly module: Type<T >;
 
+    constructor(module: Type<T>) {
+        this.module = module;
+    }
     public bootstrap(): Promise<T> {
         return new Promise<any>((resolve, reject) => {
             platformBrowserDynamic()
